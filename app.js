@@ -1,20 +1,9 @@
-let round = prompt("คุณจะเล่นทั้งหมดกี่รอบ ?")
-for(var i = 0; i < round; i++){
-  var answer = prompt("หัว หรือ ก้อย")
-  var ramdom_answer = "" 
-  if((Math.floor(Math.random*10)) <= 4){
-//หัว
-ramdom_answer = "หัว"
-  } 
-  else{
-//ก้อย
-ramdom_answer = "ก้อย"
-  }
-  if(answer == ramdom_answer){
-   alert("ยินดีด้วย")   
-  }
-  else{
-alert("เสียใจด้วย")
-  }
-  console.log(ramdom_answer + " : " + answer)
+function toCelsius(fahrenheit){
+let value = (fahrenheit-32)*5/9
+return value.toFixed(2) + "  เซลเซียส"
 }
+function display(elementId,value){
+  document.getElementById(elementId).innerHTML = value
+}
+alert(toCelsius(150))
+display("result",toCelsius(120))
