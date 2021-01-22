@@ -2,7 +2,7 @@ let round = prompt("คุณจะเล่นทั้งหมดกี่ร
 for(var i = 0; i < round; i++){
   var answer = prompt("หัว หรือ ก้อย")
   var ramdom_answer = "" 
-  if(Math.floor(Math.random*10) <= 4){
+  if((Math.floor(Math.random*10)) <= 4){
 //หัว
 ramdom_answer = "หัว"
   } 
