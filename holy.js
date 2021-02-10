@@ -1,5 +1,11 @@
-
-var number = prompt("กรอกตัวเลข 0 - 9 จำนวน 4-9 ตัว ไม่ซ้ำกัน : ");
-for(let i = 0 ; i < number.length ; i++){
-    document.write(number[i]+"<br>");
+function myfunction(){
+    var x, text;
+    x=document.getElementById("numb").value;
+    if(isNaN(x)){
+        text = "กรอกข้อมูลใหม่";
+    }else{
+        text = "ค่าที่ได้ = ";
+    }
+    document.getElementById("result").innerHTML = text+x;
 }
+
