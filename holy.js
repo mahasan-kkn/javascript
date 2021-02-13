@@ -1,11 +1,9 @@
-function myfunction(){
-    var x, text;
-    x=document.getElementById("numb").value;
-    if(isNaN(x)){
-        text = "กรอกข้อมูลใหม่";
-    }else{
-        text = "ค่าที่ได้ = ";
-    }
-    document.getElementById("result").innerHTML = text+x;
-}
-
+function myselect() {
+    var x = document.getElementById("num").value;
+    
+    var memmo = [];
+    for(let i = 0; i < x.length ; i++){
+    memmo.push(x[i]);
+  } 
+  document.getElementById("result").innerHTML = memmo;
+  }

@@ -10,18 +10,11 @@
  <h1>calculator</h1>
  <strong>กรอกตัวเลข</strong>
  <input type="text" id="num" maxlength="9">
- <button onclick="myFunction()">กรอกตัวเลขเสร็จกดปุ่มนี้</button>
+ <button onclick="myselect()"><h4>กรอกตัวเลขเสร็จกดปุ่มนี้</h4></button>
  <h3>*** หมายเหตุ กรอกตัวเลข 0-9 ไม่ซ้ำกัน จำนวน 4 - 9 ตัว</h3>
  <hr>
  <p id="result"></p>
- <script>
-function myFunction() {
-  var x = document.getElementById("num").value;
-  var memmo = [];
-  for(let i = 0; i < x.length ; i++){
-  document.getElementById("result").innerHTML = x[i];
-}
-}
+ <script src="holy.js">
  </script>   
 </body>
 </html>
