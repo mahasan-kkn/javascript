@@ -5,23 +5,17 @@ function myselect() {
     memmo.push(x[i]);
     }
     console.log(memmo);
-    let dog = [];
-    for(let i = 0; i < memmo.length-2; i++){
-      let cat = memmo[i];
-      for(let j = 1+i; j < memmo.length-1; j++){
-      let rat = cat+memmo[j];
-      dog.push(rat);
+    let leng = memmo.length;
+    let total = [];
+    for(let j = 0;j < leng-2;j++){
+      let a = memmo[j];
+      for(let k = j+1; k < leng-1; k++){
+        let b = memmo[k];
+        for(let t = k+1; t < leng; t++){
+          let c = memmo[t];
+          total.push(a+b+c);
+        }
       }
-    }
-    console.log(dog);
-    let wing = []
-    for(let k = 0; k < dog.length; k++){
-      let rat = dog[k];
-      for(let t = 2+k; t < memmo.length; t++){
-      let mat = rat+memmo[t];
-      wing.push(mat);
-      }
-    }
-    console.log(wing);
-    //document.getElementById("result").innerHTML = memmo;
+    }console.log(total);
+    document.getElementById("result").innerHTML = total;
     }
